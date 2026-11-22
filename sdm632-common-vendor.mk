@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/com.motorola.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.moto-uirefresh.xml \
     vendor/motorola/sdm632-common/proprietary/product/etc/permissions/com.motorola.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.motodisplay.xml \
-    vendor/motorola/sdm632-common/proprietary/product/etc/permissions/privapp-permissions-com.motorola.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera2.xml \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
@@ -24,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/permissions/com.motorola.camera2.denali.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera2.denali.xml \
-    vendor/motorola/sdm632-common/proprietary/vendor/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.motosignature.xml \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin \
     vendor/motorola/sdm632-common/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin \
@@ -51,7 +49,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
     vendor.qti.gnss@3.0-impl \
-    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.iop@2.0-impl \
     vulkan.msm8953 \
     libC2D2 \
@@ -159,7 +156,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@2.1 \
     vendor.qti.gnss@3.0-service \
     vendor.qti.gnss@3.0 \
-    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.iop@1.0_vendor \
     vendor.qti.hardware.iop@2.0_vendor \
     vendor.qti.hardware.scve.objecttracker@1.0_vendor \
@@ -200,6 +196,7 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     vendor.display.color@1.2 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
     libadsp_fd_skel \
@@ -210,24 +207,19 @@ PRODUCT_PACKAGES += \
     libscveBlobDescriptor_skel \
     libscveObjectSegmentation_skel \
     libscveT2T_skel \
-    fm_helium \
-    libfm-hci \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper \
     vendor.qti.hardware.scve.objecttracker@1.0 \
     vendor.qti.hardware.scve.panorama@1.0-adapter-helper \
     vendor.qti.hardware.scve.panorama@1.0 \
-    MotoSignatureApp \
+    vendor.qti.hardware.fm@1.0 \
     TimeService \
-    com.motorola.motosignature \
     vendor.qti.gnss@3.0-service.xml \
     adsprpcd \
     capsense_reset \
     cnss-daemon \
     energy-awareness \
-    fm_qsoc_patches \
     garden_app \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
